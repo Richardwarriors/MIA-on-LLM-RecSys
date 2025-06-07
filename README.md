@@ -21,3 +21,20 @@ You can run an MIA experiment with the following command:
 
 ```bash
 python3 semantic.py --models llama3 --datasets ml1m --num_seeds 10 --all_shots 1 --positions 'end'
+
+### **Results**
+
+### we give poisioning attack on llama2 on MovieLens-1M as an example.
+
+| num_shots | num_poison | threshold | Adv    |
+|-----------|------------|-----------|--------|
+| 1         | 2          | 0.31      | 0.788  |
+|           | 5          | 0.35      | 0.7913 |
+|           | 8          | 0.34      | 0.7917 |
+| 5         | 2          | 0.26      | 0.744  |
+|           | 5          | 0.27      | 0.815  |
+|           | 8          | 0.26      | 0.775  |
+| 10        | 2          | 0.27      | 0.670  |
+|           | 5          | 0.29      | 0.705  |
+|           | 8          | 0.28      | 0.765  |
+
