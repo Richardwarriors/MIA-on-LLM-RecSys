@@ -20,9 +20,9 @@ These attacks are conducted in various settings to test how well LLMs such as LL
 You can run an MIA experiment with the following command:
 
 ```bash
-python3 semantic.py --models llama3 --datasets ml1m --num_seeds 10 --all_shots 1 --positions 'end'
+python3 poisoning.py --models llama2 --datasets ml1m --num_seeds 500 --all_shots 1 --positions 'end'
 
-### **Results**
+### Results
 
 ### we give poisioning attack on llama2 on MovieLens-1M as an example.
 
